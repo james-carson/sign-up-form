@@ -75,7 +75,7 @@ div {
 #left_panel {
     background: url(images/bg_image.jpg);
     background-size: cover;
-    opacity: 1;
+    /* z-index: -1; */
 }
 
 .panel {
@@ -84,7 +84,6 @@ div {
 
 .left {
     width: calc(80vw / 3);
-    opacity: 0;
 }
 
 .right {
@@ -105,10 +104,39 @@ div {
 }
 
 #left_top {
-    top: calc(100vh / 3);
+    height: calc((100vh / 3) + 5vh);
+}
+
+#left_bottom{
+    height: calc((100vh / 3 * 2) - 5vh);
 }
 
 #footer {
     bottom: 0;
     height: 5vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#logo_holder {
+    background-color: black;
+    opacity: 0.5;
+    height: 15vh;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    display: flex;
+    color: white;
+    font-size: 7.5vh;
+    opacity: 1;
+}
+
+#logo_image {
+    max-height: 10vh;
 }
