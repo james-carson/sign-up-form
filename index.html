@@ -5,28 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Odin Project: Sign-Up Form Project</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div id="left_panel">
-        <div id="left_top" class="left top">
-            <div id="logo" class="left"></div>
-        </div>
-        <div id="left_bottom" class="left bottom">
-            <div id="footer" class="left"></div>
-        </div>
-    </div>
-    <div id="right_panel">
-        <div id="right_top" class="right top">
-            <div id="intro_text" class="right"></div>
-        </div>
-        <div id="right_middle" class="right middle">
-            <div id="right_mid_header" class="right middle"></div>
-            <div id="right_column_left" class="right middle"></div>
-            <div id="right_column_right" class="right middle"></div>
-        </div>
-        <div id="right_bottom" class="right bottom">
-            <div id="button_login" class="right bottom"></div>
+    <div id="container" class="full_height">
+        <div id="content" class="full_height">
+            <div id="left_panel" class="full_height panel relative_positioned">
+                <div id="left_top" class="left top absolute_positioned">
+                    <div id="logo" class="left"></div>
+                </div>
+                <div id="left_bottom" class="left bottom">
+                    <div id="footer" class="left absolute_positioned"></div>
+                </div>
+            </div>
+            <div id="right_panel" class="full_height panel">
+                <div id="right_top" class="right top">
+                    <div id="intro_text" class="right"></div>
+                </div>
+                <div id="right_middle" class="right middle">
+                    <div id="right_mid_header" class="right middle"></div>
+                    <div id="right_column_left" class="right middle"></div>
+                    <div id="right_column_right" class="right middle"></div>
+                </div>
+                <div id="right_bottom" class="right bottom">
+                    <div id="button_login" class="right bottom"></div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -2,26 +2,113 @@
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-  }
-  * {
+}
+
+* {
     margin: 0;
-  }
-  body {
+}
+
+body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-  }
-  img, picture, video, canvas, svg {
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
     display: block;
     max-width: 100%;
-  }
-  input, button, textarea, select {
+}
+
+input,
+button,
+textarea,
+select {
     font: inherit;
-  }
-  p, h1, h2, h3, h4, h5, h6 {
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     overflow-wrap: break-word;
-  }
-  #root, #__next {
+}
+
+#root,
+#__next {
     isolation: isolate;
-  }
+}
+
+/* CODE AFTER RESET */
+
+div {
+    display: flex;
+    /* To see layout, temporary: */
+    outline: 1px solid black;
+}
+
+.full_height {
+    height: 100vh;
+}
+
+#container {
+    width: 100vw;
+    background-color: black;
+    justify-content: center;
+}
+
+#content {
+    width: 80vw;
+    background-color: white;
+}
+
+#left_panel {
+    background: url(images/bg_image.jpg);
+    background-size: cover;
+    opacity: 1;
+}
+
+.panel {
+    flex-wrap: wrap;
+}
+
+.left {
+    width: calc(80vw / 3);
+    opacity: 0;
+}
+
+.right {
+    width: calc(80vw / 3 * 2);
+    height: calc(100vh / 3);
+}
+
+#right_middle{
+    flex-direction: column;
+}
+
+.relative_positioned{
+    position: relative;
+}
+
+.absolute_positioned{
+    position: absolute;
+}
+
+#left_top {
+    top: calc(100vh / 3);
+}
+
+#footer {
+    bottom: 0;
+    height: 5vh;
+}
