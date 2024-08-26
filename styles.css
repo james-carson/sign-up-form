@@ -83,11 +83,28 @@ body{
 div {
     display: flex;
     /* To see layout, temporary: */
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
 }
 
 .full_height {
     height: 100vh;
+}
+
+h1 {
+    font-family: "rubiklight", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: clamp(3rem, 5.5rem, 5.5rem);
+}
+
+h2, h3 {
+    font-family: "rubikbold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h3{
+    font-size: 1.1rem;
+}
+
+h2 {
+    font-size: 1.2rem;
 }
 
 #container {
@@ -113,6 +130,10 @@ div {
     padding-top: 2vh;
 }
 
+.pad_right {
+    padding-right: 2vw;
+}
+
 #left_panel {
     background: url(images/bg_image.jpg);
     background-size: cover;
@@ -123,7 +144,7 @@ div {
 }
 
 .left {
-    width: calc(80vw / 3);
+    width: clamp(calc(80vw / 4), calc(80vw / 3), calc(80vw / 3));
 }
 
 .right {
@@ -154,6 +175,7 @@ div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-right: 2rem;
 }
 
 .form_input {
@@ -200,11 +222,12 @@ div {
 #logo {
     font-family: "rubiklight", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
+    flex-wrap: wrap;
     color: white;
-    font-size: 5.5rem;
     opacity: 1;
     justify-content: center;
     align-items: center;
+    font-size: clamp(3rem, 5.5rem, 5.5rem);
 }
 
 #logo_image {
@@ -222,20 +245,10 @@ a {
     flex-direction: column;
     gap: 2vh;
     justify-content: flex-end;
-    line-height: 1rem;
+    line-height: 1.2rem;
 }
 
-h1, h2 {
-    font-family: "rubikbold", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 
-h2{
-    font-size: 1.1rem;
-}
-
-h1 {
-    font-size: 1.2rem;
-}
 
 /* Inputs to be styled next! */
 
@@ -246,4 +259,26 @@ label {
 #right_bottom {
     display: flex;
     flex-direction: column;
+}
+
+input {
+    border: 1px solid lightgrey;
+    border-radius: 0.25em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+
+input:focus {
+    border: 2px solid blue
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+button {
+    width: 12rem;
+    height: 2.5rem;
+    background-color: rgb(63, 54, 8);
+    color: white;
 }

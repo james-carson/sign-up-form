@@ -16,7 +16,7 @@
                     <div id="logo_holder" class="left absolute_positioned">
                         <div id="logo" class="left absolute_positioned">
                             <img id="logo_image" src="images/logo_image.png" alt="The Odin Project logo">
-                            ODIN
+                            <h1>ODIN</h1>
                         </div>
                     </div>
                 </div>
@@ -33,56 +33,56 @@
             <div id="right_panel" class="full_height panel">
                 <div id="right_top" class="right top right_section">
                     <div id="intro_text" class="right pad_left pad_bottom">
-                        <h2>
+                        <h3>
                             This is not a real online service! You know you need something like this in your like to
                             help you realise your deepest dreams.<br>Sign up <em>now </em> to get started
-                        </h2>
-                        <h2>
+                        </h3>
+                        <h3>
                             You <em>know </em> you want to.
-                        </h2>
+                        </h3>
                     </div>
                 </div>
                 <div id="right_middle" class="right middle right_section">
                     <div id="right_mid_header" class="right middle pad_left">
-                        <h1>Let's do this!</h1>
+                        <h2>Let's do this!</h2>
                     </div>
-                    <div id="column_container" class="right middle">
+                    <form action="" method="post" id="column_container" class="right middle">
                         <div id="column_left" class="column right pad_left">
 
                             <!-- Inputs to be styled next! -->
 
                             <div class="form_input"><label for="first_name">FIRST NAME</label>
-                                <input type="text" name="first_name" id="first_name">
+                                <input type="text" name="first_name" id="first_name" tabindex="1" minlength="1">
                             </div>
 
                             <div class="form_input"><label for="email">EMAIL</label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" tabindex="3">
                             </div>
 
                             <div class="form_input"><label for="password">PASSWORD</label>
-                                <input type="password" name="password" id="password">
+                                <input type="password" name="password" id="password" minlength="8" required tabindex="5">
                             </div>
                         </div>
 
                         <div id="column_right" class="column right pad_left">
 
                             <div class="form_input"><label for="last_name">LAST NAME</label>
-                                <input type="text" name="last_name" id="last_name">
+                                <input type="text" name="last_name" id="last_name" tabindex="2" minlength="1">
                             </div>
 
                             <div class="form_input"><label for="phone_number">PHONE NUMBER</label>
-                                <input type="tel" name="phone_number" id="phone_number">
+                                <input type="tel" name="phone_number" id="phone_number" tabindex="4" minlength="8">
                             </div>
 
                             <div class="form_input"><label for="confirm_password">CONFIRM PASSWORD</label>
-                                <input type="password" name="confirm_password" id="confirm_password">
+                                <input type="password" name="confirm_password" id="confirm_password" minlength="8" required tabindex="6">
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div id="right_bottom" class="right bottom right_section pad_left pad_top">
-                       <button type="submit">Create Account</button>
-                       <p>Already have an account? <a href="blank">Log in</a></p>
+                       <button type="submit" tabindex="7">Create Account</button>
+                       <p class="pad_top">Already have an account? <a href="blank" style="color: black;">Log in</a></p>
                 </div>
             </div>
         </div>
