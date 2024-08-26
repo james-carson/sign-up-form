@@ -31,8 +31,8 @@
 
             </div>
             <div id="right_panel" class="full_height panel">
-                <div id="right_top" class="right top">
-                    <div id="intro_text" class="right pad_right pad_bottom">
+                <div id="right_top" class="right top right_section">
+                    <div id="intro_text" class="right pad_left pad_bottom">
                         <h2>
                             This is not a real online service! You know you need something like this in your like to
                             help you realise your deepest dreams.<br>Sign up <em>now </em> to get started
@@ -42,36 +42,45 @@
                         </h2>
                     </div>
                 </div>
-                <div id="right_middle" class="right middle">
-                    <div id="right_mid_header" class="right middle pad_right">
+                <div id="right_middle" class="right middle right_section">
+                    <div id="right_mid_header" class="right middle pad_left">
                         <h1>Let's do this!</h1>
                     </div>
-                    <div id="row_container" class="right middle">
-                        <div id="right_row_top" class="row right pad_right">
-                            <label for="first_name">FIRST NAME</label>
-                            <input type="text" name="first_name" id="first_name">
+                    <div id="column_container" class="right middle">
+                        <div id="column_left" class="column right">
 
-                            <label for="last_name">LAST NAME</label>
-                            <input type="text" name="last_name" id="last_name">
+                            <div class="form_input"><label for="first_name">FIRST NAME</label>
+                                <input type="text" name="first_name" id="first_name">
+                            </div>
+
+                            <div class="form_input"><label for="email">EMAIL</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+
+                            <div class="form_input"><label for="password">PASSWORD</label>
+                                <input type="password" name="password" id="password">
+                            </div>
                         </div>
-                        <div id="right_row_middle" class="row right pad_right">
-                            <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
 
-                            <label for="phone_number">PHONE NUMBER</label>
-                            <input type="tel" name="phone_number" id="phone_number">
-                        </div>
-                        <div id="right_row_bottom" class="row right pad_right">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
+                        <div id="column_right" class="column right">
 
-                            <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm_password" id="confirm_password">
+                            <div class="form_input"><label for="last_name">LAST NAME</label>
+                                <input type="text" name="last_name" id="last_name">
+                            </div>
+
+                            <div class="form_input"><label for="phone_number">PHONE NUMBER</label>
+                                <input type="tel" name="phone_number" id="phone_number">
+                            </div>
+
+                            <div class="form_input"><label for="confirm_password">CONFIRM PASSWORD</label>
+                                <input type="password" name="confirm_password" id="confirm_password">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="right_bottom" class="right bottom">
-                    <div id="button_login" class="right bottom pad_right"></div>
+                <div id="right_bottom" class="right bottom right_section pad_left pad_top">
+                       <button type="submit">Create Account</button>
+                       <p>Already have an account? <a href="blank">Log in</a></p>
                 </div>
             </div>
         </div>
